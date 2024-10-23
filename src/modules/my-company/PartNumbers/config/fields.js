@@ -1,0 +1,51 @@
+export const FORM_FIELDS = [
+  { id: "pnName", label: "Name", type: "text", required: true },
+  {
+    id: "description",
+    label: "Description",
+    type: "text",
+    required: true,
+  },
+  {
+    id: "efficiency",
+    label: "Efficiency",
+    type: "number",
+    required: true,
+    min: 0,
+    max: 100,
+  },
+  {
+    id: "simulationPeriod",
+    label: "Simulation Period (weeks)",
+    type: "number",
+    required: false,
+    min: 0,
+  },
+  {
+    id: "simulationBuckets",
+    label: "Simulation Buckets",
+    type: "select",
+    options: ["2 weeks", "4 weeks", "6 weeks"],
+    required: false,
+  },
+  {
+    id: "stdPrince",
+    label: "Standard Price",
+    type: "number",
+    required: false,
+    min: 0,
+  },
+  {
+    id: "preferredCurrency",
+    label: "Preferred Currency",
+    type: "select",
+    options: ["EUR", "USD"],
+    required: false,
+  },
+  {
+    id: "assignedToProductionLine",
+    label: "Production Line",
+    type: "text",
+    required: false,
+  },
+];
